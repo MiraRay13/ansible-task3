@@ -1,0 +1,44 @@
+- name: Replace a localhost entry with our own
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1'
+    line: 137.184.101.171 centos1
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Replace a localhost entry with our own
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1'
+    line: 206.81.14.10 centos2
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Replace a localhost entry with our own
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1'
+    line: 159.223.178.55 centos3
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Replace a localhost entry with our own
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1'
+    line: 161.35.58.254 centos4
+    owner: root
+    group: root
+    mode: '0644'
+
+- name: Replace a localhost entry with our own
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^127\.0\.0\.1'
+    line: 157.245.91.245 centos5
+    owner: root
+    group: root
+    mode: '0644'

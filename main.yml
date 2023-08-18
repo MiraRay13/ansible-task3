@@ -3,4 +3,4 @@
   - name: Include other tasks
     ansible.builtin.lineinfile:
       path: /etc/hosts
-      line: "{{ IP&VM }}"
+      line: "{{ ansible_default_ipv4.address }} {{ inventory_hostname }}"
